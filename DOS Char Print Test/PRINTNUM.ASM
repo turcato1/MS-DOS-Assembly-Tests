@@ -20,4 +20,4 @@ LOOP:	MOV [200],BX	; Load BX coded char in printing position in memory
 	JCXZ "END"	; If char '0' reached, ends the program execution 
 	DEC BX		; Go to next char
 	JMP "LOOP"	; Loops until the last char
-FIM:	INT 20		; Tells DOS to terminate the program execution
+END:	INT 20		; Tells DOS to terminate the program execution
